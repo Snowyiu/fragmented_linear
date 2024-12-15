@@ -1,0 +1,15 @@
+# First, ignore everything
+*
+*/*
+
+# Then, un-ignore the specific files we want to track
+!fragmentedlinear.py
+!profile_fragmented_linear.py
+
+# Also un-ignore .gitignore itself for maintainability
+!.gitignore
+
+# Ensure Python cache files are ignored even if they match above patterns
+__pycache__/
+*.py[cod]
+*$py.class
