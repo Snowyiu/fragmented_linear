@@ -4,7 +4,20 @@
 
 # Then, un-ignore the specific files we want to track
 !fragmentedlinear.py
+!fragmentedlinear2.py
+!fragmentedlinear3.py
+!fragmentedlinear4.py
+!fragmentedlinear5.py
+!fragmentedlinear6.py
 !profile_fragmented_linear.py
+!benchmark.py
+
+# Benchmark results
+!benchmark_1.txt
+!benchmark_2.txt
+!benchmark_3.txt
+!benchmark_4.txt
+!benchmark_5.txt
 
 # Also un-ignore .gitignore itself for maintainability
 !.gitignore

@@ -1,0 +1,428 @@
+#fragmentedlinear6 benchmark results (interrupted due to crippling slowness)
+
+Benchmarking with input_size=2048, output_size=2048, batch_size=1
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.12ms
+  Backward time: 1.01ms
+  Peak memory: 96.3MB
+  Parameters: 4196352
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.68ms
+  Backward time: 2.19ms
+  Peak memory: 133.4MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 0.51ms
+  Backward time: 2.57ms
+  Peak memory: 133.4MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 0.57ms
+  Backward time: 2.01ms
+  Peak memory: 133.4MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 0.86ms
+  Backward time: 1.69ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 0.98ms
+  Backward time: 1.27ms
+  Peak memory: 133.3MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 1.84ms
+  Backward time: 1.42ms
+  Peak memory: 133.3MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 5.79ms
+  Backward time: 1.55ms
+  Peak memory: 133.4MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 23.59ms
+  Backward time: 1.76ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+Benchmarking with input_size=2048, output_size=2048, batch_size=8
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.27ms
+  Backward time: 2.85ms
+  Peak memory: 96.5MB
+  Parameters: 4196352
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.54ms
+  Backward time: 1.54ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 0.58ms
+  Backward time: 1.55ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 0.59ms
+  Backward time: 1.91ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 0.59ms
+  Backward time: 1.88ms
+  Peak memory: 133.8MB
+  Parameters: 4458496
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.25ms
+  Backward time: 1.34ms
+  Peak memory: 140.5MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 2.50ms
+  Backward time: 1.68ms
+  Peak memory: 134.6MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 7.21ms
+  Backward time: 3.13ms
+  Peak memory: 133.6MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 19.44ms
+  Backward time: 2.93ms
+  Peak memory: 133.8MB
+  Parameters: 4458496
+
+Benchmarking with input_size=2048, output_size=2048, batch_size=16
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.18ms
+  Backward time: 1.28ms
+  Peak memory: 96.8MB
+  Parameters: 4196352
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.61ms
+  Backward time: 1.95ms
+  Peak memory: 133.8MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 0.85ms
+  Backward time: 2.01ms
+  Peak memory: 133.8MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 0.63ms
+  Backward time: 1.98ms
+  Peak memory: 133.9MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 0.71ms
+  Backward time: 1.99ms
+  Peak memory: 149.1MB
+  Parameters: 4458496
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.52ms
+  Backward time: 1.76ms
+  Peak memory: 140.8MB
+  Parameters: 4458496
+
+Fragments: 8
+  Forward time: 3.11ms
+  Backward time: 2.70ms
+  Peak memory: 134.9MB
+  Parameters: 4458496
+
+Fragments: 32
+  Forward time: 10.00ms
+  Backward time: 4.48ms
+  Peak memory: 133.9MB
+  Parameters: 4458496
+
+Fragments: 128
+  Forward time: 21.09ms
+  Backward time: 5.05ms
+  Peak memory: 134.0MB
+  Parameters: 4458496
+
+Benchmarking with input_size=4096, output_size=4096, batch_size=1
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.25ms
+  Backward time: 3.00ms
+  Peak memory: 336.4MB
+  Parameters: 16781312
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.74ms
+  Backward time: 3.31ms
+  Peak memory: 484.5MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 0.70ms
+  Backward time: 2.88ms
+  Peak memory: 484.5MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 0.48ms
+  Backward time: 3.03ms
+  Peak memory: 484.6MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 0.50ms
+  Backward time: 2.81ms
+  Peak memory: 485.0MB
+  Parameters: 17829888
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.54ms
+  Backward time: 2.51ms
+  Peak memory: 484.4MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 2.08ms
+  Backward time: 2.49ms
+  Peak memory: 484.4MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 4.01ms
+  Backward time: 2.39ms
+  Peak memory: 484.5MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 16.57ms
+  Backward time: 2.94ms
+  Peak memory: 484.9MB
+  Parameters: 17829888
+
+Benchmarking with input_size=4096, output_size=4096, batch_size=8
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.27ms
+  Backward time: 2.82ms
+  Peak memory: 336.8MB
+  Parameters: 16781312
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.81ms
+  Backward time: 3.39ms
+  Peak memory: 484.9MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 0.81ms
+  Backward time: 3.29ms
+  Peak memory: 484.9MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 0.89ms
+  Backward time: 3.21ms
+  Peak memory: 485.0MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 0.69ms
+  Backward time: 3.09ms
+  Peak memory: 485.4MB
+  Parameters: 17829888
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.94ms
+  Backward time: 3.15ms
+  Peak memory: 512.8MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 2.96ms
+  Backward time: 4.14ms
+  Peak memory: 489.0MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 8.24ms
+  Backward time: 5.56ms
+  Peak memory: 485.0MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 18.53ms
+  Backward time: 5.81ms
+  Peak memory: 485.3MB
+  Parameters: 17829888
+
+Benchmarking with input_size=4096, output_size=4096, batch_size=16
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.26ms
+  Backward time: 2.64ms
+  Peak memory: 337.3MB
+  Parameters: 16781312
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.59ms
+  Backward time: 2.88ms
+  Peak memory: 485.4MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 0.61ms
+  Backward time: 2.92ms
+  Peak memory: 485.4MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 0.67ms
+  Backward time: 2.98ms
+  Peak memory: 485.5MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 0.62ms
+  Backward time: 3.21ms
+  Peak memory: 485.9MB
+  Parameters: 17829888
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.62ms
+  Backward time: 2.88ms
+  Peak memory: 513.3MB
+  Parameters: 17829888
+
+Fragments: 8
+  Forward time: 4.15ms
+  Backward time: 4.96ms
+  Peak memory: 489.6MB
+  Parameters: 17829888
+
+Fragments: 32
+  Forward time: 8.22ms
+  Backward time: 6.08ms
+  Peak memory: 485.5MB
+  Parameters: 17829888
+
+Fragments: 128
+  Forward time: 21.40ms
+  Backward time: 8.48ms
+  Peak memory: 485.8MB
+  Parameters: 17829888
+
+Benchmarking with input_size=8192, output_size=8192, batch_size=1
+
+Detailed Results:
+Linear Layer:
+  Forward time: 0.44ms
+  Backward time: 6.80ms
+  Peak memory: 1296.5MB
+  Parameters: 67117056
+
+FragmentedLinear (Train) Results:
+
+Fragments: 2
+  Forward time: 0.75ms
+  Backward time: 8.24ms
+  Peak memory: 1888.7MB
+  Parameters: 71311360
+
+Fragments: 8
+  Forward time: 1.26ms
+  Backward time: 8.44ms
+  Peak memory: 1888.7MB
+  Parameters: 71311360
+
+Fragments: 32
+  Forward time: 1.08ms
+  Backward time: 8.36ms
+  Peak memory: 1888.9MB
+  Parameters: 71311360
+
+Fragments: 128
+  Forward time: 0.69ms
+  Backward time: 8.53ms
+  Peak memory: 1889.7MB
+  Parameters: 71311360
+
+FragmentedLinear (Inference) Results:
+
+Fragments: 2
+  Forward time: 1.10ms
+  Backward time: 7.81ms
+  Peak memory: 1888.5MB
+  Parameters: 71311360
+
+Fragments: 8
+  Forward time: 2.39ms
+  Backward time: 7.62ms
+  Peak memory: 1888.6MB
+  Parameters: 71311360
+
+Fragments: 32
+  Forward time: 5.15ms
+  Backward time: 7.62ms
+  Peak memory: 1888.8MB
+  Parameters: 71311360
+
+Fragments: 128
+  Forward time: 16.73ms
+  Backward time: 7.58ms
+  Peak memory: 1889.5MB
+  Parameters: 71311360
